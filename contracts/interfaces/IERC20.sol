@@ -1,6 +1,11 @@
 pragma solidity >=0.5.0;
 
 interface IERC20 {
+
+    IERC20 public immutable stackingToken;
+    IERC20 public immutable rewardToken;
+
+
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
 
