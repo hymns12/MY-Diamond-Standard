@@ -24,6 +24,7 @@ contract ERC20Facet is IERC20 {
         return s._totalSupply;
     }
 
+
     function balanceOf(address account) public view override returns (uint256) {
         return s._balances[account];
     }
